@@ -5,6 +5,7 @@
 - superuser(admin) created
 - User Authentication created
 - Designing using bootstrap (ongoing)
+- password change and reset
 
 ## errors
 - nav bar error - displays over other text, when the browser is adjusted the nav bar shows as a small object with blank display
