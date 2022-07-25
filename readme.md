@@ -3,18 +3,18 @@
 
 ## added features
 - superuser(admin) created
-- User Authentication (ongoing)
+- User Authentication created
+- Desiging using bootstrap (ongoing)
 
 ## errors
-- 0 atm
+- nav bar error - displays over other text, when the browser is adjusted the nav bar shows as a small object with blank display
 
 ## fixed errors
-- on creating users 
+- on creating users
 ``bash
     python manage.py startapp users
 ``
 it didn't create a folder and cannot find the module users - fixed by reinstalling the django and by initiating command again
-
-```bash
+``bash
     python manage.py startapp users
-```
+``
