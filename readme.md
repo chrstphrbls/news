@@ -1,6 +1,13 @@
 # news app
 - this is based on the Django for beginners pdf
 
+## features
+- login admin account
+- signup
+- login/logout
+- custom user model
+- forms
+
 ## errors
 
 ## fixed errors
