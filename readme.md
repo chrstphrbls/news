@@ -1,7 +1,12 @@
 # news app
 - this is based on the Django for beginners pdf
 
+## added features
+- superuser(admin) created
+- User Authentication (ongoing)
+
 ## errors
+- 0 atm
 
 ## fixed errors
 - on creating users 
