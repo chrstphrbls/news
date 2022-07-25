@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    #'users.apps.UsersConfig', #initiate users
+    'users.apps.UsersConfig', #initiate users
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -120,4 +120,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# AUTH_USER_MODEL = 'users.CustomUser' #initiate custom users
+AUTH_USER_MODEL = 'users.CustomUser' #initiate custom users
