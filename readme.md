@@ -4,7 +4,7 @@
 ## added features
 - superuser(admin) created
 - User Authentication created
-- Desiging using bootstrap (ongoing)
+- Designing using bootstrap (ongoing)
 
 ## errors
 - nav bar error - displays over other text, when the browser is adjusted the nav bar shows as a small object with blank display
