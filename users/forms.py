@@ -1,8 +1,4 @@
 # users/forms.py
-
-from dataclasses import fields
-import imp
-from pyexpat import model
 from django import forms
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 
@@ -12,11 +8,11 @@ class CustomUserCreationForm(UserCreationForm):
 
     class Meta(UserCreationForm.Meta):
         model = CustomUser
-        field = UserCreationForm.Meta.fields + ('age',)
+        fields = UserCreationForm.Meta.fields + ('username','email','age',) #adding new form to the signup page
 
 class CustomUserChangeForm(UserChangeForm):
 
     class Meta:
         model = CustomUser
-        fields = UserChangeForm.Meta.fields
+        fields = ('username','email','age',)
 
