@@ -2,10 +2,11 @@
 - this is based on the Django for beginners pdf
 
 ## added features
-- superuser(admin) created
-- User Authentication created
-- Designing using bootstrap (ongoing)
-- password change and reset
+- superuser(admin) - created
+- User Authentication - created
+- Designing using bootstrap - created
+- password change and reset - created
+- creating the articles app - ongoing
 
 ## errors
 - nav bar error - displays over other text, when the browser is adjusted the nav bar shows as a small object with blank display
@@ -19,3 +20,6 @@ it didn't create a folder and cannot find the module users - fixed by reinstalli
 ``bash
     python manage.py startapp users
 ``
+, also by commenting the line which installs the app in the setting.py - project directory
+
+
