@@ -40,7 +40,7 @@ related_name='comments',
 ``
 now the card displays the footer which contains the comment.
 - heroku deployment fixed by editing the Procfile, installing gunicorn, connecting github to heroku
-``bash
+``
     web: gunicorn newspaper_project.wsgi --log-file -
 ``
 
