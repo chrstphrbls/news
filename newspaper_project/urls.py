@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('users/',include('users.urls')),
     path('users/',include('django.contrib.auth.urls')),
+    path('articles/',include('articles.urls')), #let the project know the url articles do exist
     path('',include('pages.urls')), #pages app is now the homepage
 ]
