@@ -1,9 +1,8 @@
 # articles/views.py
-from ast import Delete
-from django.views.generic import ListView,DetailView,CreateView
-from django.views.generic.edit import UpdateView, DeleteView
+from django.contrib.auth.mixins import LoginRequiredMixin #restrict views
+from django.views.generic import ListView,DetailView
+from django.views.generic.edit import UpdateView, DeleteView,CreateView
 from django.urls import reverse_lazy
-
 
 from .models import Article
 
@@ -26,7 +25,12 @@ class ArticleDeleteView(DeleteView):
     template_name = 'article_delete.html'
     success_url = reverse_lazy('article_list.html')
 
-class ArticleCreateView(CreateView):
+class ArticleCreateView(LoginRequiredMixin,CreateView):
     model = Article
     template_name = 'article_new.html'
-    fields = ('title','body','author',)
+    fields = ('title','body',)
+    login_url = 'login' #show when 404 not logged in
+
+    def form_valid(self,form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
