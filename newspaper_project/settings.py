@@ -35,6 +35,8 @@ INSTALLED_APPS = [
     #local
     'users.apps.UsersConfig', #initiate users
     'pages.apps.PagesConfig', #initiate pages app
+    'articles.apps.ArticlesConfig', #initiate articles app
+
     #3rd party
     'crispy_forms', 
 
@@ -112,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Taipei' #adding timezone base on wiki TW UTC+8
 
 USE_I18N = True
 
