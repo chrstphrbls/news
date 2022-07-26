@@ -7,15 +7,24 @@
 {% endblock title %}
 
 {% block content %}
-    {% if user.is_authenticated %}
+    {% comment %} {% if user.is_authenticated %}
         Hi {{user.username}}!
-        {% comment %} <p><a href="{% url 'logout' %}">logout</a> </p> {% endcomment %}
+        <p><a href="{% url 'logout' %}">logout</a> </p>
     {% else %}
         <p>You are not logged in </p>
-        {% comment %} <a href="{% url 'login' %}">Login</a>
+        <a href="{% url 'login' %}">Login</a>
         <a> | </a>
-        <a href="{% url 'signup' %}">Signup</a> {% endcomment %}
-    {% endif %}
+        <a href="{% url 'signup' %}">Signup</a>
+    {% endif %} {% endcomment %}
+    <div class="jumbotron">
+        <h1 class="display-4">Newspaper app</h1>
+        <p class="lead">A Newspaper website built with Django.</p>
+        <p class="lead">
+            <a class='btn btn-primary btn-lg' href="{% url 'article_list' %}"
+                role="button">View All Articles</a>
+        </p>
+    </div>
+
 {% endblock content %}
 
 

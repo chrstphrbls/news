@@ -35,7 +35,7 @@
                             aria-expanded="false"
                             aria-label="Toggle navigation"
                             >
-                            {% comment %} <i class="fas fa-bars"></i> {% endcomment %}
+                            {% comment %} <li class="fas fa-bars"></li> {% endcomment %}
                             <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -44,7 +44,9 @@
                                         <li class="nav-item active">
 
                                             <li class="nav-item active ">
-                                            <a class="nav-link" aria-current="page" href="{% url 'article_new'%}" style="color:white">+ New</a></li>   
+                                            <a class="nav-link" aria-current="page" 
+                                                href="{% url 'article_new'%}" 
+                                                style="color:white">+ New</a></li>   
                                             
                                             <a class="nav-link dropdown-toggle" href="#" id="userMenu"
                                                 data-toggle="dropdown"
