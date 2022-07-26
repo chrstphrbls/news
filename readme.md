@@ -9,7 +9,7 @@
 - creating the articles app - ongoing
 
 ## errors
-
+- deploying on heroku, command syntax error.
 
 ## fixed errors
 - nav bar error - displays over other text, when the browser is adjusted the nav bar shows as a small object with blank display, fixed by adding a padding 
