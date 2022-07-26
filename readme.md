@@ -39,3 +39,17 @@ fixed by adding padding to both sides
 related_name='comments', 
 ``
 now the card displays the footer which contains the comment.
+- heroku deployment fixed by editing the Procfile, installing gunicorn, connecting github to heroku
+``bash
+    web: gunicorn newspaper_project.wsgi --log-file -
+``
+
+## Deployment
+
+To deploy this project copy this code and paste it on your broswer
+
+```bash
+  https://newspaperwebapp.herokuapp.com/
+```
+
+
