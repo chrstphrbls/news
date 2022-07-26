@@ -7,7 +7,8 @@
 - Designing using bootstrap - created
 - password change and reset - created
 - creating the articles app - created
-- permission and authorizations - ongoing
+- permission and authorizations - created
+- comments - ongoing
 
 ## errors
 - deploying on heroku, command syntax error.
@@ -31,5 +32,5 @@ also by commenting the line which installs the app in the setting.py - project d
 ```
     <div style="padding-left: 65px;padding-right:65px">
 ```
-added padding to both sides
+- fixed by adding padding to both sides
 

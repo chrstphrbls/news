@@ -27,7 +27,7 @@ class ArticleUpdateView(LoginRequiredMixin,UpdateView):
     def dispatch(self, request, *args, **kwargs):
         obj = self.get_object()
         if obj.author != self.request.user:
-                raise PermissionDenied
+            raise PermissionDenied
         return super().dispatch(request, *args,**kwargs)
 
 class ArticleDeleteView(LoginRequiredMixin,DeleteView):
@@ -39,7 +39,7 @@ class ArticleDeleteView(LoginRequiredMixin,DeleteView):
     def dispatch(self, request, *args, **kwargs):
         obj = self.get_object()
         if obj.author != self.request.user:
-                raise PermissionDenied
+            raise PermissionDenied
         return super().dispatch(request, *args, **kwargs)
     
 
