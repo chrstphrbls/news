@@ -3,12 +3,12 @@
 
 ## added features
 - superuser(admin) - created
-- User Authentication - created
+- User Authentication - implemented
 - Designing using bootstrap - created
-- password change and reset - created
-- creating the articles app - created
-- permission and authorizations - created
-- comments - ongoing
+- password change and reset - implemented
+- creating the articles app - implemented
+- permission and authorizations - implemented
+- comments - implemented
 
 ## bugs
 - deploying on heroku, command syntax error.
