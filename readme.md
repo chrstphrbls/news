@@ -10,10 +10,10 @@
 - permission and authorizations - created
 - comments - ongoing
 
-## errors
+## bugs
 - deploying on heroku, command syntax error.
 
-## fixed errors
+## fixed bugs
 - nav bar error - displays over other text, when the browser is adjusted the nav bar shows as a small object with blank display, fixed by adding this to the code
 ```
     <!-- <div style="padding:65px"> --> 
@@ -34,3 +34,8 @@ also by commenting the line which installs the app in the setting.py - project d
 ```
 - fixed by adding padding to both sides
 
+- reverse no match found for pk, missed this line on class comment
+``
+related_name='comments', 
+``
+now the card displays the footer which contains the comment.
