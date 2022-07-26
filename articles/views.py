@@ -1,8 +1,28 @@
 # articles/views.py
-from django.views.generic import ListView
+from ast import Delete
+from django.views.generic import ListView,DetailView
+from django.views.generic.edit import UpdateView, DeleteView
+from django.urls import reverser_lazy
+
 
 from .models import Article
 
+'tell the program where they will use the db, on what UI? what db?'
 class ArticleListView(ListView):
     model = Article
     template_name = 'article_list.html'
+
+class ArticleDetailView(DetailView):
+    model = Article
+    template_name = 'article_detail.html'
+
+class ArticleUpdateView(UpdateView):
+    model = Article
+    fields = ('title', 'body',)
+    template_name = 'article_edit.html'
+
+class ArticleDeleteView(DeleteView):
+    model = Article
+    template_name = 'article_delete.html'
+    success_url = reverser_lazy('article_list')
+
