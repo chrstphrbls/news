@@ -29,10 +29,10 @@ it didn't create a folder and cannot find the module users - fixed by reinstalli
 ``
 also by commenting the line which installs the app in the setting.py - project directory
 - the body is very close to the sides
-```
-    <div style="padding-left: 65px;padding-right:65px">
-```
-- fixed by adding padding to both sides
+``
+    div style="padding-left: 65px;padding-right:65px"
+``
+fixed by adding padding to both sides
 
 - reverse no match found for pk, missed this line on class comment
 ``
