@@ -9,9 +9,13 @@
 - creating the articles app - ongoing
 
 ## errors
-- nav bar error - displays over other text, when the browser is adjusted the nav bar shows as a small object with blank display
+
 
 ## fixed errors
+- nav bar error - displays over other text, when the browser is adjusted the nav bar shows as a small object with blank display, fixed by adding a padding 
+``css
+    <div style="padding:65px">
+``
 - on creating users
 ``bash
     python manage.py startapp users
