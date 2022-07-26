@@ -2,7 +2,7 @@
 from ast import Delete
 from django.views.generic import ListView,DetailView
 from django.views.generic.edit import UpdateView, DeleteView
-from django.urls import reverser_lazy
+from django.urls import reverse_lazy
 
 
 from .models import Article
@@ -24,5 +24,5 @@ class ArticleUpdateView(UpdateView):
 class ArticleDeleteView(DeleteView):
     model = Article
     template_name = 'article_delete.html'
-    success_url = reverser_lazy('article_list')
+    success_url = reverse_lazy('article_list')
 
