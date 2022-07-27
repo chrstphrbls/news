@@ -53,3 +53,21 @@ To deploy this project copy this code and paste it on your broswer
 ```
 
 
+## Comments
+
+Current issues found:
+
+USER
+-Age field on Sign Up page allows ages beyond 100.
+-Multiple users using an identical email address is currently allowed.
+-Can't delete his/her own published news, results in NoReverseMatch error. (FIX IMPLEMENTED but NOT YET TESTED)
+
+ADMIN
+-Can't delete his/her own published news nor those of the users, results in NoReverseMatch error. (FIX IMPLEMENTED but NOT YET TESTED)
+
+
+
+
+
+
+
