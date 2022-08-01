@@ -33,7 +33,7 @@ class ArticleUpdateView(LoginRequiredMixin,UpdateView):
 class ArticleDeleteView(LoginRequiredMixin,DeleteView):
     model = Article
     template_name = 'article_delete.html'
-    success_url = reverse_lazy('article_list.html')
+    success_url = reverse_lazy('article_list')
     login_url = 'login'
 
     def dispatch(self, request, *args, **kwargs):
