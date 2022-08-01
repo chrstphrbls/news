@@ -11,7 +11,7 @@
 - comments - implemented
 
 ## bugs
-- deleting - on confirm error
+- 
 
 ## fixed bugs
 - nav bar error - displays over other text, when the browser is adjusted the nav bar shows as a small object with blank display, fixed by adding this to the code
@@ -43,6 +43,7 @@ now the card displays the footer which contains the comment.
 ``
     web: gunicorn newspaper_project.wsgi --log-file -
 ``
+- deleting - on confirm error
 
 ## Deployment
 
