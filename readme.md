@@ -64,8 +64,8 @@ ADMIN
 -Can't delete his/her own published news nor those of the users, results in NoReverseMatch error.  
   
 WEB APP  
--Created users disappear after some time.  
--Can only access user accounts on machines where they are created.
+-Created users disappear after some time.  (dev- caching in not yet implemented)
+-Can only access user accounts on machines where they are created. (dev- caching in not yet implemented)
 
 ## Contributing
 -[@christophernabo](https://github.com/christophernabo)  
