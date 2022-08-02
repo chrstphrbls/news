@@ -57,12 +57,12 @@ To deploy this project copy this code and paste it on your broswer
 Current issues found:  
   
 USER  
--Age field on Sign Up page allows ages 0 and beyond 100.  
--Usage of same email by multiple users is currently allowed.  
--Can't delete his/her own published news, results in NoReverseMatch error.  
+-Age field on Sign Up page allows ages 0 and beyond 100.  (age limit is not specified on the code)
+-Usage of same email by multiple users is currently allowed.  (database checking not implemented)
+-Can't delete his/her own published news, results in NoReverseMatch error.  (dev- fixed typo on the url tag)
   
 ADMIN  
--Can't delete his/her own published news nor those of the users, results in NoReverseMatch error.  
+-Can't delete his/her own published news nor those of the users, results in NoReverseMatch error.  (dev- fixed typo on the url tag)
   
 WEB APP  
 -Created users disappear after some time.  (dev- caching in not yet implemented)
